@@ -1,4 +1,4 @@
-<%= form_with(model: post) do |form| %>
+<%= form_with(model: post, :html => {class: "form-horizontal", role: "form"}) do |form| %>
   <% if post.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -11,22 +11,22 @@
     </div>
   <% end %>
 
-  <div>
+  <div class="form-group">
     <%= form.label :title, style: "display: block" %>
     <%= form.text_field :title %>
   </div>
 
-  <div>
+  <div class="form-group">
     <%= form.label :content, style: "display: block" %>
     <%= form.text_field :content %>
   </div>
 
-  <div>
+  <div class="form-group">
     <%= form.label :premium, style: "display: block" %>
     <%= form.check_box :premium %>
   </div>
 
-  <div>
-    <%= form.submit %>
+  <div class="form-group">
+    <%= form.submit class: 'btn btn-primary btn-lg col-sm-7' %>
   </div>
 <% end %>
