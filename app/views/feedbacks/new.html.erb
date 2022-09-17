@@ -1,0 +1,11 @@
+<h1><%= t '.title' %> </h1>
+
+<%= render "form", feedback: @feedback %>
+
+<br>
+<%= render @feedbacks %>
+
+
+<div>
+  <%= link_to "Back to feedbacks", feedbacks_path, class:"btn btn-primary" %>
+</div>

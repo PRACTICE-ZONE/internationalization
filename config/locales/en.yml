@@ -1,0 +1,28 @@
+en:
+  static_pages:
+    index:
+      welcome: "Welcom"
+      services_html: "We provide some fancy services to <em>good people</em>."
+  activerecord:
+    models:
+      feedback: "Feedback"
+    attributes:
+      feedback:
+        author: "Your name"
+        message: "Message"
+  global:
+    feedback:
+      new:
+      title: "New feedback"
+      posted_by: "Posted by %{author}"
+    forms:
+      submit: "Submit"
+      messages:
+        errors:
+          one: "One error prohibited this feedback from being saved"
+          other: "%{count} errors prohibited this feedback from being saved"
+    menu:
+      home: "Home"
+      feedback: "Feedback"
+  
+

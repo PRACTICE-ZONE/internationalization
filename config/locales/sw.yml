@@ -1,0 +1,26 @@
+sw:
+  static_pages:
+    index:
+      welcome: "Karibu!"
+      services_html: "Tunatoa huduma za kifahari kwa <em>watu wema</em>."
+  activerecord:
+    models:
+      feedback: "Ujumbe"
+    attributes:
+      feedback:
+        author: "Jina kamili"
+        message: "Ujumbe wako"
+  global:
+    feedback:
+      new:
+      title: "Andika Ujumbe mpya"
+      posted_by: "Ujumbe huu umetumwa na %{author}"
+    forms:
+      submit: "Tuma Ujumbe"
+      messages:
+        errors:
+          one: "Kuna kosa moja umefanya linazuia usitume ujumbe"
+          other: "Kuna makosa %{count} umefanya yanazuia usitume ujumbe"
+    menu:
+      home: "Mwanzo"
+      feedback: "Maoni"
