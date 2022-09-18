@@ -1,0 +1,24 @@
+<div class="container mt-2" align="center">
+   <div class="row">
+   <div class="col-sm-3">
+       <div class="card">
+         <div class="card-body">
+           <h5 class="card-title">Plan</h5>
+           <p class="card-text">Free</p>
+           <a href="#" class="btn btn-primary">Go somewhere</a>
+         </div>
+       </div>
+     </div>
+      <% @pricing.each do |price| %>
+     <div class="col-sm-3">
+       <div class="card">
+         <div class="card-body">
+           <h5 class="card-title">Plan</h5>
+           <p class="card-text "><span class="text-danger"><%= price.unit_amount/100 %></span><%= price.currency %> per <%= price.recurring.interval %></p>
+           <a href="#" class="btn btn-primary">Go somewhere</a>
+         </div>
+       </div>
+     </div>
+      <% end %>
+   </div>
+</div>
