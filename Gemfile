@@ -12,6 +12,9 @@ gem "sprockets-rails"
 # ... 
 gem 'rails-i18n'
 
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+
+gem 'devise'
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
