@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :feedbacks
     root 'static_pages#index'
     get 'pricing', to: 'static_pages#pricing'
+    post 'checkout/create', to: 'checkout#create', as: 'checkout'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
