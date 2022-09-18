@@ -20,7 +20,7 @@
           <span class="nav-link active" >Plan: <span>
         </li>
         <li class="nav-item">
-           <span class="nav-link active" >Subscription Status: <%= current_user.subscription_status %> <span>
+           <span class="nav-link active" >Subscription Status: <%= current_user.subscription_status if user_signed_in? %> <span>
         </li>
       </ul>
    <div class="navbar-nav">
