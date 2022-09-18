@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'checkout/create'
   devise_for :users
   resources :posts
   scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
