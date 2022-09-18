@@ -13,6 +13,9 @@ class PostsController < ApplicationController
 
   # GET /posts/1 or /posts/1.json
   def show
+    if @post.premium? && current_user.subscription_status != 'active'
+      redirect_to posts_path, notice: 'You must be a subscriber to view this post.'
+    end
   end
 
   # GET /posts/new
