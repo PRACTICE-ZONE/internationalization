@@ -10,6 +10,7 @@ class CheckoutController < ApplicationController
       success_url: posts_url,
       cancel_url: pricing_url,
     })
+
     respond_to do |format|
       format.js
     end
