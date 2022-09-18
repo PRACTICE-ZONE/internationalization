@@ -3,6 +3,6 @@ class StaticPagesController < ApplicationController
   end
 
   def pricing
-    @pricing = Stripe::Price.list(lookup_keys: ["good_year", "good_month"])
+    @pricing = Stripe::Price.list(lookup_keys: ["good_year", "good_month"], expand: ["data.product"])
   end
 end
