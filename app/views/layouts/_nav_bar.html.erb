@@ -18,14 +18,14 @@
       </ul>
    <div class="navbar-nav">
       
- <form class="d-flex">
+      <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
        
         <li class="nav-item d-flex align-items-center justify-content-start"><i class="flag flag-england "></i><%= link_to 'English', root_path(locale: :en), class: "nav-link" %></li>
         <li class="nav-item d-flex align-items-center justify-content-start"><i class="flag flag-tanzania "></i><%= link_to 'Swahili', root_path(locale: :sw), class: "nav-link" %></li>
-       
+       <%= render 'layouts/user_icon' %>
   </div>
     </div>
   </div>
