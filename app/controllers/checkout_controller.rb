@@ -10,6 +10,8 @@ class CheckoutController < ApplicationController
       success_url: posts_url,
       cancel_url: pricing_url,
     })
-    render json: { id: session.id }
+    respond_to do |format|
+      format.js
+    end
   end
 end
