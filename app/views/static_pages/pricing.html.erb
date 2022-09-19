@@ -6,7 +6,7 @@
          <div class="card-body">
            <h5 class="card-title">Trial</h5>
            <p class="card-text">Free</p>
-           <a href="#" class="btn btn-primary">see posts</a>
+           <%= link_to "see Post", posts_path, class:"btn btn-primary" %>
          </div>
        </div>
      </div>
@@ -16,7 +16,7 @@
          <div class="card-body">
            <h5 class="card-title"><%= price.product.name %> product</h5>
            <p class="card-text "><span class="text-danger"><%= price.unit_amount/100 %></span><%= price.currency %> per <%= price.recurring.interval %></p>
-           <%= link_to 'Checkout', checkout_create_path, method: :post, remote: true, class: 'btn btn-primary' %>
+           <%= link_to 'Checkout', checkout_path, method: :post, remote: true, class: 'btn btn-primary' %>
          </div>
        </div>
      </div>
